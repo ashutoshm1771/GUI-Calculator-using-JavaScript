@@ -1,0 +1,63 @@
+<html>
+<head>
+<script language="javascript">
+var input_data=" "
+function compute_ans(value)
+{
+input_data=input_data+value;
+document.calculate.txt_input.value=input_data;
+}
+</head>
+<body>
+<center>
+<table border=7 bordercolor="black" bgcolor="gray">
+<form name="calculator">
+<p><br>
+<em>Note that this is a simple calculator</em>
+</p>
+<th>Calculator</th>
+<tr align="center">
+<td>
+<input type="text" name="txt_input" maxlength=10 size=30>
+</td>
+</tr>
+<tr align="center">
+<td>
+<input type="button" value="1" onclick="compute_ans('1')">
+<input type="button" value="2" onclick="compute_ans('2')">
+<input type="button" value="3" onclick="compute_ans('3')">
+</td>
+</tr>
+<tr align="center">
+<td>
+<input type="button" value="4" onclick="compute_ans('4')">
+<input type="button" value="5" onclick="compute_ans('5')">
+<input type="button" value="6" onclick="compute_ans('6')">
+</td>
+</tr>
+<tr align="center">
+<td>
+<input type="button" value="7" onclick="compute_ans('7')">
+<input type="button" value="8" onclick="compute_ans('8')">
+<input type="button" value="9" onclick="compute_ans('9')">
+</td></tr>
+<tr align="center">
+<td>
+<input type="button" value="0" onclick="compute_ans('1')">
+<input type="button" value="Clear" onclick="txt_input.value=' ';input_data=' '">
+<input type="button" value="=" onclick="txt_input.value=eval(input_data);">
+</td>
+</tr>
+<tr align="center">
+<td>
+<input type="button" value="+" onclick="compute_ans('+')">
+<input type="button" value="-" onclick="compute_ans('-')">
+<input type="button" value="/" onclick="compute_ans('/')">
+<input type="button" value="*" onclick="compute_ans('*')">
+</td>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>
